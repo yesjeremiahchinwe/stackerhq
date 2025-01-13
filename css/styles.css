@@ -1,0 +1,57 @@
+:root {
+  --dark: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --light-dark: rgb(34, 34, 34);
+  --gray: rgb(102, 102, 102);
+  --light-gray: rgb(205, 205, 205);
+  --lighter-gray: rgb(153, 153, 153);
+  --lightes-gray: rgb(243, 243, 243);
+  --purple: rgb(89, 38, 218);
+  --green: rgb(37, 182, 112);
+  --blue: rgb(39, 114, 255);
+  --red: rgb(233, 49, 49);
+  --orange: rgb(251, 101, 19);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease-in;
+}
+
+a:hover {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+#mobilePopup {
+  background-color: rgb(255, 255, 255);
+  border-radius: 26px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 24px 76px 0px,
+    rgba(0, 0, 0, 0.06) 0px 3px 9.52px 0px,
+    rgba(0, 0, 0, 0.12) 0px -24px 200px 200px;
+  opacity: 0;
+  will-change: transform;
+}
+
+@media screen and (min-width: 1200px) {
+
+}
