@@ -1,4 +1,3 @@
-
 /* ------------------ Slider on Home Page - Hero Section ------------------- */
 const slides = document.querySelectorAll(".slide");
 const slideFooterIndicators = document.querySelectorAll(".indicator");
@@ -33,7 +32,7 @@ function changeSlide(index) {
     if (index === i) {
       setTimeout(() => {
         slide.classList.add("active");
-      }, 1000)
+      }, 1000);
     } else {
       slide.classList.remove("active");
     }
@@ -49,60 +48,68 @@ setInterval(() => {
 
 changeSlide(currentSlide);
 
-
 /* ----------------------- Desktop Navigation ----------------- */
-const desktopNavigationContainer = document.querySelector(".desktop_navigation_container")
+const desktopNavigationContainer = document.querySelector(
+  ".desktop_navigation_container"
+);
 
-const productContainer = document.querySelector(".products")
-const solutionsContainer = document.querySelector(".solutions")
-const resourcesContainer = document.querySelector(".resources")
-const desktopNavOverlay = document.querySelector(".desktop_navigation_overlay")
+const productContainer = document.querySelector(".products");
+const solutionsContainer = document.querySelector(".solutions");
+const resourcesContainer = document.querySelector(".resources");
+const desktopNavOverlay = document.querySelector(".desktop_navigation_overlay");
 // const groupFour = document.querySelector(".price")
 
-const productsUl = document.querySelector(".products_ul")
-const solutionsUl = document.querySelector(".solutions_ul")
-const resourcesUl = document.querySelector(".resources_ul")
+const productsUl = document.querySelector(".products_ul");
+const solutionsUl = document.querySelector(".solutions_ul");
+const resourcesUl = document.querySelector(".resources_ul");
 
 /* ---------------------------- Navbar for Desktop View --------------------------- */
+desktopNavigationContainer.addEventListener("mouseleave", () => {
+  desktopNavigationContainer.classList.remove(
+    "desktop_navigation_container_show"
+  );
+  desktopNavOverlay.classList.remove("desktop_navigation_overlay_show");
+});
+
 /* ------------- Product Nav ----------------------- */
 productContainer.addEventListener("mouseover", () => {
-  desktopNavigationContainer.classList.add("desktop_navigation_container_show")
-  desktopNavOverlay.classList.add("desktop_navigation_overlay_show")
+  solutionsUl.classList.remove("show_soutions_ul");
+  resourcesUl.classList.remove("show_resources_ul");
 
-  solutionsUl.classList.remove("show_soutions_ul")
-  resourcesUl.classList.remove("show_resources_ul")
-  productsUl.classList.add("products_ul_show")
-})
+  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
+  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
+  productsUl.classList.add("show_products_ul");
+});
 
-desktopNavigationContainer.addEventListener("mouseleave", () => {
-  desktopNavigationContainer.classList.remove("desktop_navigation_container_show")
-  desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
-})
+/* ------------- Solutions Nav ----------------------- */
+solutionsContainer.addEventListener("mouseover", () => {
+  productsUl.classList.remove("show_products_ul");
+  resourcesUl.classList.remove("show_resources_ul");
 
-/* ---------------- Solutions Nav --------------------- */
-// solutionsContainer.addEventListener("mouseover", () => {
-//   featuresUl.classList.remove("show_features_ul")
-//   compareUl.classList.remove("show_compare_ul")
-//   resourceUl.classList.add("show_resource_ul")
-// })
+  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
+  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
+  solutionsUl.classList.add("show_soutions_ul");
+});
 
-// resourceUl.addEventListener("mouseleave", () => {
-//   resourceUl.classList.remove("show_resource_ul")
-// })
+/* -------------------- No Code Builder Image Slider ---------------------- */
+const firstBanner = document.querySelector(".first_banner")
+const innerFirstBanner = document.querySelector(".inner_first_banner")
+const secondBannner = document.querySelector(".second_banner");
+const innerSecondBanner = document.querySelector(".inner_second_ban");
 
-/* ----------------- Resources Nav --------------------- */
-// resourcesContainer.addEventListener("mouseover", () => {
-//   resourceUl.classList.remove("show_resource_ul")
-//   compareUl.classList.add("show_compare_ul")
-// })
+secondBannner.classList.add("active");
+firstBanner.classList.add("active")
 
-// compareUl.addEventListener("mouseleave", () => {
-//   compareUl.classList.remove("show_compare_ul")
-// })
+setInterval(() => {
+  if (secondBannner.classList.contains("active")) {
+    secondBannner.classList.remove("active");
+    innerSecondBanner.classList.add("active");
+    innerFirstBanner.classList.add("active")
+  } else {
+    innerSecondBanner.classList.remove("active");
+    secondBannner.classList.add("active");
 
-/* ------------- Token Nav --------------- */
-// groupFour.addEventListener("mouseover", () => {
-//   featuresUl.classList.remove("show_features_ul")
-//   resourceUl.classList.remove("show_resource_ul")
-//   compareUl.classList.remove("show_compare_ul")
-// })
+    innerFirstBanner.classList.remove("active")
+    firstBanner.classList.add("active")
+  }
+}, 3000);
