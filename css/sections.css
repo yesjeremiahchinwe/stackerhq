@@ -62,7 +62,7 @@
 .core_software_container h3 {
   font-size: 1.9rem;
   font-weight: 600;
-  line-height: 1.5rem;
+  line-height: 1.9rem;
 }
 
 .core_software_container .wrapper {
@@ -677,7 +677,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 85%;
   max-width: 570px;
   flex: 1 1 auto;
   margin: 0 1rem 1rem;
@@ -855,7 +855,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 93%;
-  max-width: 50%;
+  max-width: 80%;
   padding-bottom: 0.75rem;
 }
 
@@ -945,6 +945,12 @@
   top: 40.5%;
   right: 10%;
   z-index: 15;
+}
+
+@media screen and (min-width: 576px) {
+  .real_collaboration .content_wrapper .details_wrapper {
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -1406,6 +1412,7 @@
 .platform_container .platform_mobile_wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 2.5rem;
 }
 

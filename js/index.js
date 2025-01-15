@@ -1,5 +1,5 @@
-/* ------------------------------------- Slider on Home Page - Hero Section ---------------------------------- */
-const slides = document.querySelectorAll(".slide");
+
+/* ------------------------------------- Slider on Home Page - Hero Section ---------------------------------- */const slides = document.querySelectorAll(".slide");
 const slideFooterIndicators = document.querySelectorAll(".indicator");
 let currentSlide = 0;
 
@@ -72,7 +72,7 @@ desktopNavigationContainer.addEventListener("mouseleave", () => {
 
 /* ------------- Product Nav ----------------------- */
 productContainer.addEventListener("mouseover", () => {
-  solutionsUl.classList.remove("show_soutions_ul");
+  solutionsUl.classList.remove("show_solutions_ul");
   resourcesUl.classList.remove("show_resources_ul");
 
   desktopNavigationContainer.classList.add("desktop_navigation_container_show");
@@ -87,7 +87,17 @@ solutionsContainer.addEventListener("mouseover", () => {
 
   desktopNavigationContainer.classList.add("desktop_navigation_container_show");
   desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
-  solutionsUl.classList.add("show_soutions_ul");
+  solutionsUl.classList.add("show_solutions_ul");
+});
+
+/* ------------- Resources Nav ----------------------- */
+resourcesContainer.addEventListener("mouseover", () => {
+  productsUl.classList.remove("show_products_ul");
+  solutionsUl.classList.remove("show_solutions_ul");
+
+  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
+  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
+  resourcesUl.classList.add("show_resources_ul");
 });
 
 /* -------------------------------------- No Code Builder Image Slider ------------------------------------ */
@@ -159,3 +169,56 @@ closeMobileMenuButton.addEventListener("click", () => {
   mobileNavMenuContainer.classList.remove("mobile_nav_menu_container_show");
   desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
 });
+
+/* -------------------- Mobile Submenu Logic ------------------- */
+const menuContentWrapper = document.querySelector(".menu_content_wrapper > ul")
+
+const productSubmenu = document.querySelector(".product_submenu")
+const solutionSubmenu = document.querySelector(".solution_submenu")
+const resourcesSubmenu = document.querySelector(".resources_submenu")
+
+const mobileProductsSubmenu = document.querySelector(".mobile_products_submenu")
+const mobileSolutionsSubmenu = document.querySelector(".mobile_solutions_submenu")
+const mobileResourcesSubmenu = document.querySelector(".mobile_resources_submenu")
+
+const menuHeadingText = document.querySelector(".headingText")
+const backButton = document.querySelector(".back_button")
+
+/* --------------- Products --------------- */
+productSubmenu.addEventListener("click", () => {
+  mobileProductsSubmenu.classList.add("mobile_products_submenu_show")
+  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+
+  menuHeadingText.textContent = 'Products'
+  backButton.classList.add("back_button_show")
+})
+
+/* --------------- Solutions --------------- */
+solutionSubmenu.addEventListener("click", () => {
+  mobileSolutionsSubmenu.classList.add("mobile_solutions_submenu_show")
+  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+
+  menuHeadingText.textContent = 'Solutions'
+  backButton.classList.add("back_button_show")
+})
+
+/* --------------- Resources --------------- */
+resourcesSubmenu.addEventListener("click", () => {
+  mobileResourcesSubmenu.classList.add("mobile_resources_submenu_show")
+  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+
+  menuHeadingText.textContent = 'Learn'
+  backButton.classList.add("back_button_show")
+})
+
+/* --------------- Mobile Submenu Back Button ----------------- */
+backButton.addEventListener("click", () => {
+  backButton.classList.remove("back_button_show")
+  menuContentWrapper.classList.remove("menu_content_wrapper_hide")
+
+  mobileProductsSubmenu.classList.remove("mobile_products_submenu_show")
+  mobileSolutionsSubmenu.classList.remove("mobile_solutions_submenu_show")
+  mobileResourcesSubmenu.classList.remove("mobile_resources_submenu_show")
+  
+  menuHeadingText.textContent = 'Menu'
+})

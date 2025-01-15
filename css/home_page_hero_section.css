@@ -15,7 +15,6 @@ header {
   gap: 1rem;
   justify-content: space-between;
   padding: 1.15rem 1.25rem 1rem 1.35rem;
-  z-index: 30;
 }
 
 header a {
@@ -29,7 +28,7 @@ header .desktop_navigation {
   align-items: flex-end;
   justify-content: center;
   gap: 1.5rem;
-  z-index: 30;
+  z-index: 115;
 }
 
 header .desktop_navigation small {
@@ -65,12 +64,11 @@ header .signInButton a {
   color: #000;
   font-size: 14px;
   cursor: pointer;
+  z-index: 12;
 }
 
 .hero_content_container {
   flex: 1 1 100%;
-  position: relative;
-  z-index: 40;
 }
 
 .hero_content {
@@ -107,8 +105,8 @@ header .signInButton a {
 
 .hero_content h1 {
   font-weight: 600;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
   color: var(--dark);
 }
 
@@ -127,8 +125,12 @@ header .signInButton a {
 .hero_content .action_buttons {
   margin: 2rem 0 1rem;
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
-  align-items: center;
+  row-gap: 1rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
 }
 
 .hero_content .action_buttons a {
@@ -140,6 +142,8 @@ header .signInButton a {
   font-size: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .hero_content .action_buttons a span {
@@ -156,7 +160,8 @@ header .signInButton a {
 .slider-wrapper {
   margin: 0;
   padding: 0 1.25rem;
-  flex: 1 1 50%;
+  flex: 1 1 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   z-index: 35;
@@ -170,8 +175,7 @@ header .signInButton a {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: scroll;
-  scroll-behavior: smooth;
+  overflow: hidden;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
@@ -230,11 +234,11 @@ header .signInButton a {
 .slide_content .wrapper {
   background-color: white;
   height: 200;
-  width: 250px;
+  /* width: 250px; */
   border-radius: 9px;
   padding: 1rem 1.5rem;
   position: absolute;
-  left: 25%;
+  left: 12%;
   top: 33%;
 }
 
@@ -468,7 +472,7 @@ header .signInButton a {
 
 .mobile_nav_menu_container_show {
   opacity: 1;
-  z-index: 80;
+  z-index: 110;
 }
 
 .mobile_nav_menu_container button {
@@ -483,8 +487,32 @@ header .signInButton a {
   cursor: pointer;
 }
 
+.mobile_nav_menu_container .back_button {
+  background-color: rgba(243, 243, 243, 0.9);
+  border-radius: 26px;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 14px;
+  border: none;
+  align-self: flex-start;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease-in;
+}
+
+.mobile_nav_menu_container .back_button_show {
+  display: block;
+}
+
 .menu_content_wrapper {
   padding: 1.5rem 0.75rem 1rem;
+}
+
+.menu_content_wrapper_hide {
+  display: none;
 }
 
 .menu_content_wrapper h3 {
@@ -492,7 +520,7 @@ header .signInButton a {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .menu_content_wrapper li {
@@ -520,10 +548,6 @@ header .signInButton a {
   width: 6px;
 }
 
-.menu_content_wrapper .action_links {
-  padding-top: 1rem;
-}
-
 .menu_content_wrapper .action_links a {
   border-radius: 26px;
   width: 100%;
@@ -542,6 +566,73 @@ header .signInButton a {
   color: var(--white);
 }
 
+/* ------------- Mobile Submenu ---------------- */
+.mobile_products_submenu,
+.mobile_solutions_submenu,
+.mobile_resources_submenu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile_products_submenu_show {
+  display: flex;
+}
+
+.mobile_solutions_submenu_show {
+  display: flex;
+}
+
+.mobile_resources_submenu_show {
+  display: flex;
+}
+
+.mobile_products_submenu li,
+.mobile_solutions_submenu li {
+  border-bottom: 0 transparent;
+  padding: 1rem;
+  border-radius: 19px;
+}
+
+.mobile_products_submenu li:hover,
+.mobile_solutions_submenu li:hover {
+  background-color: rgba(243, 243, 243, 0.9);
+}
+
+.mobile_products_submenu a,
+.mobile_solutions_submenu a {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.mobile_products_submenu a img,
+.mobile_solutions_submenu a img {
+  width: 24px;
+  height: auto;
+}
+
+.mobile_products_submenu a h6,
+.mobile_solutions_submenu a h6 {
+  font-size: 1rem;
+}
+
+.mobile_products_submenu a p,
+.mobile_solutions_submenu a p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  max-width: 70%;
+}
+
+.mobile_resources_submenu li {
+  padding: 0.15rem 1rem 1rem;
+}
+
+.mobile_resources_submenu a:hover {
+  color: var(--purple);
+}
+
 /* ---------------------- Desktop Navigation ------------------- */
 .desktop_navigation_overlay {
   opacity: 0;
@@ -558,7 +649,7 @@ header .signInButton a {
 
 .desktop_navigation_overlay_show {
   opacity: 1;
-  z-index: 50;
+  z-index: 100;
 }
 
 .desktop_navigation_container {
@@ -579,7 +670,7 @@ header .signInButton a {
 
 .desktop_navigation_container_show {
   opacity: 1;
-  z-index: 40;
+  z-index: 105;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,7 +678,8 @@ header .signInButton a {
 
 /* ----------------- Products, Solutions Nav ---------------------*/
 .products_ul,
-.solutions_ul {
+.solutions_ul,
+.resources_ul {
   display: none;
   column-gap: 1rem;
   justify-content: space-between;
@@ -598,12 +690,14 @@ header .signInButton a {
 }
 
 .show_products_ul,
-.show_soutions_ul {
+.show_solutions_ul,
+.show_resources_ul {
   display: flex;
 }
 
 .products_ul h4,
-.solutions_ul h4 {
+.solutions_ul h4,
+.resources_ul h4 {
   color: rgba(128, 128, 128, 0.7);
   font-size: 0.85rem;
   font-weight: 500;
@@ -612,19 +706,22 @@ header .signInButton a {
 }
 
 .products_ul .product_items,
-.solutions_ul .product_items {
+.solutions_ul .product_items,
+.resources_ul .product_items {
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
 }
 
 .products_ul .product_items.second_list,
-.solutions_ul .product_items.second_list {
+.solutions_ul .product_items.second_list,
+.resources_ul .product_items.second_list {
   padding-top: 6.75rem;
 }
 
 .products_ul .product_items a,
-.solutions_ul .product_items a {
+.solutions_ul .product_items a,
+.resources_ul .product_items a {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -635,17 +732,20 @@ header .signInButton a {
 }
 
 .products_ul .product_items a img,
-.solutions_ul .product_items a img {
+.solutions_ul .product_items a img,
+.resources_ul .product_items a img {
   width: 24px;
 }
 
 .products_ul .product_items a:hover,
-.solutions_ul .product_items a:hover {
+.solutions_ul .product_items a:hover,
+.resources_ul .product_items a:hover {
   background-color: var(--lightes-gray);
 }
 
 .products_ul .product_items a h6,
-.solutions_ul .product_items a h6 {
+.solutions_ul .product_items a h6,
+.resources_ul .product_items a h6 {
   font-size: 1.15rem;
   color: var(--dark);
   font-weight: 500;
@@ -653,12 +753,14 @@ header .signInButton a {
 }
 
 .products_ul .product_items.last_list,
-.solutions_ul .product_items.last_list {
+.solutions_ul .product_items.last_list,
+.resources_ul .product_items.last_list {
   padding-top: 2.25rem;
 }
 
 .products_ul .product_items.last_list a,
-.solutions_ul .product_items.last_list a {
+.solutions_ul .product_items.last_list a,
+.resources_ul .product_items.last_list a {
   max-width: 100%;
   padding: 0;
   font-size: 1.15rem;
@@ -667,7 +769,8 @@ header .signInButton a {
 }
 
 .products_ul .product_items.last_list a:hover,
-.solutions_ul .product_items.last_list a:hover {
+.solutions_ul .product_items.last_list a:hover,
+.resources_ul .product_items.last_list a:hover {
   background-color: transparent;
   color: var(--purple);
 }
@@ -679,6 +782,23 @@ header .signInButton a {
 
 .show_resources_ul {
   display: block;
+}
+
+@media screen and (min-width: 567px) {
+  .hero_content .action_buttons {
+    flex-direction: row;
+  }
+
+  .hero_content .action_buttons a {
+    width: fit-content;
+  }
+
+  .hero_content h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--dark);
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -710,6 +830,10 @@ header .signInButton a {
 }
 
 @media screen and (min-width: 1200px) {
+  header a {
+    z-index: 115;
+  }
+
   .hero_content_container {
     flex-basis: 50%;
   }

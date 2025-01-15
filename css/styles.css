@@ -42,15 +42,3 @@ a:hover {
   color: var(--dark);
   font-weight: 500;
 }
-
-#mobilePopup {
-  background-color: rgb(255, 255, 255);
-  border-radius: 26px;
-  box-shadow: rgba(0, 0, 0, 0.11) 0px 24px 76px 0px,
-    rgba(0, 0, 0, 0.06) 0px 3px 9.52px 0px,
-    rgba(0, 0, 0, 0.12) 0px -24px 200px 200px;
-  opacity: 0;
-  will-change: transform;
-}
-
-@media screen and (min-width: 1200px) {}
