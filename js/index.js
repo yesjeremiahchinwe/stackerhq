@@ -1,4 +1,4 @@
-/* ------------------ Slider on Home Page - Hero Section ------------------- */
+/* ------------------------------------- Slider on Home Page - Hero Section ---------------------------------- */
 const slides = document.querySelectorAll(".slide");
 const slideFooterIndicators = document.querySelectorAll(".indicator");
 let currentSlide = 0;
@@ -48,7 +48,7 @@ setInterval(() => {
 
 changeSlide(currentSlide);
 
-/* ----------------------- Desktop Navigation ----------------- */
+/* ------------------------------------ Desktop Navigation --------------------------------------- */
 const desktopNavigationContainer = document.querySelector(
   ".desktop_navigation_container"
 );
@@ -57,7 +57,6 @@ const productContainer = document.querySelector(".products");
 const solutionsContainer = document.querySelector(".solutions");
 const resourcesContainer = document.querySelector(".resources");
 const desktopNavOverlay = document.querySelector(".desktop_navigation_overlay");
-// const groupFour = document.querySelector(".price")
 
 const productsUl = document.querySelector(".products_ul");
 const solutionsUl = document.querySelector(".solutions_ul");
@@ -91,25 +90,55 @@ solutionsContainer.addEventListener("mouseover", () => {
   solutionsUl.classList.add("show_soutions_ul");
 });
 
-/* -------------------- No Code Builder Image Slider ---------------------- */
-const firstBanner = document.querySelector(".first_banner")
-const innerFirstBanner = document.querySelector(".inner_first_banner")
+/* -------------------------------------- No Code Builder Image Slider ------------------------------------ */
+const firstBanner = document.querySelector(".first_banner");
+const innerFirstBanner = document.querySelector(".inner_first_banner");
 const secondBannner = document.querySelector(".second_banner");
 const innerSecondBanner = document.querySelector(".inner_second_ban");
 
 secondBannner.classList.add("active");
-firstBanner.classList.add("active")
+firstBanner.classList.add("active");
 
 setInterval(() => {
   if (secondBannner.classList.contains("active")) {
     secondBannner.classList.remove("active");
     innerSecondBanner.classList.add("active");
-    innerFirstBanner.classList.add("active")
+    innerFirstBanner.classList.add("active");
   } else {
     innerSecondBanner.classList.remove("active");
     secondBannner.classList.add("active");
 
-    innerFirstBanner.classList.remove("active")
-    firstBanner.classList.add("active")
+    innerFirstBanner.classList.remove("active");
+    firstBanner.classList.add("active");
   }
 }, 3000);
+
+/* ---------------------------------------- The Platform Section -------------------------------------- */
+const contentBox = document.querySelectorAll(".content_box");
+const platformImage = document.querySelectorAll(".platform_image");
+
+let currentContentBox = 0;
+
+function changeActiveContent(index) {
+  // Remove active class from all slides and indicators
+  contentBox.forEach((content) => content.classList.remove("active"));
+  platformImage.forEach((image) => image.classList.remove("active"));
+
+  contentBox[index].classList.add("active");
+  platformImage[index].classList.add("active");
+
+  contentBox.forEach((content, i) => {
+    content.addEventListener("click", () => {
+      currentContentBox = i - 1
+    });
+  });
+
+  currentContentBox = index;
+}
+
+setInterval(() => {
+  let nextContent = (currentContentBox + 1) % contentBox.length;
+  changeActiveContent(nextContent);
+}, 3000); // Change slide every 2 seconds
+
+changeActiveContent(currentContentBox);

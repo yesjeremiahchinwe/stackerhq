@@ -503,11 +503,17 @@ header .signInButton a {
 .products_ul .product_items a,
 .solutions_ul .product_items a {
   display: flex;
+  align-items: flex-start;
   gap: 1rem;
   border-radius: 14px;
   padding: 1rem;
   margin-bottom: 1rem;
   max-width: 80%;
+}
+
+.products_ul .product_items a img,
+.solutions_ul .product_items a img {
+  width: 24px;
 }
 
 .products_ul .product_items a:hover,
