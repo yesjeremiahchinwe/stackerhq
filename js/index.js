@@ -94,7 +94,7 @@ solutionsContainer.addEventListener("mouseover", () => {
 const firstBanner = document.querySelector(".first_banner");
 const innerFirstBanner = document.querySelector(".inner_first_banner");
 const secondBannner = document.querySelector(".second_banner");
-const innerSecondBanner = document.querySelector(".inner_second_ban");
+const innerSecondBanner = document.querySelector(".inner_second_banner");
 
 secondBannner.classList.add("active");
 firstBanner.classList.add("active");
@@ -129,7 +129,7 @@ function changeActiveContent(index) {
 
   contentBox.forEach((content, i) => {
     content.addEventListener("click", () => {
-      currentContentBox = i - 1
+      currentContentBox = i - 1;
     });
   });
 
@@ -142,3 +142,20 @@ setInterval(() => {
 }, 3000); // Change slide every 2 seconds
 
 changeActiveContent(currentContentBox);
+
+/* ------------------- Mobile Menu Logic -------------------- */
+const menuButton = document.querySelector(".menuButton");
+const mobileNavMenuContainer = document.querySelector(
+  ".mobile_nav_menu_container"
+);
+const closeMobileMenuButton = document.querySelector(".close_moblie_menu");
+
+menuButton.addEventListener("click", () => {
+  mobileNavMenuContainer.classList.add("mobile_nav_menu_container_show");
+  desktopNavOverlay.classList.add("desktop_navigation_overlay_show")
+});
+
+closeMobileMenuButton.addEventListener("click", () => {
+  mobileNavMenuContainer.classList.remove("mobile_nav_menu_container_show");
+  desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
+});
