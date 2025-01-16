@@ -458,7 +458,7 @@ header .signInButton a {
 .mobile_nav_menu_container {
   display: block;
   height: 100%;
-  max-height: 630px;
+  max-height: 650px;
   width: 97%;
   position: absolute;
   top: 0;
@@ -624,7 +624,8 @@ header .signInButton a {
   color: var(--gray);
   font-size: 0.9rem;
   padding-top: 0.5rem;
-  max-width: 80%;
+  width: 100%;
+  max-width: 90%;
 }
 
 .mobile_resources_submenu li {

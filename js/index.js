@@ -168,6 +168,10 @@ menuButton.addEventListener("click", () => {
 closeMobileMenuButton.addEventListener("click", () => {
   mobileNavMenuContainer.classList.remove("mobile_nav_menu_container_show");
   desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
+
+  mobileProductsSubmenu.classList.remove("mobile_products_submenu_show")
+  mobileSolutionsSubmenu.classList.remove("mobile_solutions_submenu_show")
+  mobileResourcesSubmenu.classList.remove("mobile_resources_submenu_show")
 });
 
 /* -------------------- Mobile Submenu Logic ------------------- */
