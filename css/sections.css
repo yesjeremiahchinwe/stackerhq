@@ -46,6 +46,7 @@
 .image-slider {
   display: flex;
 }
+
 .image-slider::after {
   content: "";
   display: block;
@@ -55,7 +56,7 @@
 
 /* ---------------- Core Software ------------------ */
 .core_software_container {
-  margin: 8rem auto;
+  margin: 1rem auto;
   padding: 0 1.25rem;
 }
 
@@ -71,7 +72,7 @@
   height: 100%;
   margin: 4rem auto 2rem;
   border-radius: 18px;
-  padding: 2rem 0 2rem 2rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .core_software_container .wrapper .icon_wrapper {
@@ -189,7 +190,6 @@
 
 .core_software_container .features_container .wrapper {
   margin: 0;
-  padding: 2rem;
   max-height: 100%;
 }
 
@@ -302,6 +302,14 @@
   .core_software_container {
     max-width: 90%;
     padding: 0;
+  }
+
+  .core_software_container .wrapper {
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .core_software_container .features_container .wrapper {
+    padding: 2rem;
   }
 }
 
@@ -440,12 +448,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 2rem;
+  column-gap: 2rem;
   padding: 0 1.15rem;
 }
 
 .security_container div:first-child {
-  width: 50%;
+  width: 100%;
 }
 
 .security_container small {
@@ -488,6 +496,10 @@
   .security_container {
     max-width: 90%;
     padding: 0;
+  }
+
+  .security_container div:first-child {
+    width: 50%;
   }
 }
 
@@ -795,7 +807,7 @@
 
 /* ----------------- Real-Time Collaboration ---------------- */
 .real_collaboration {
-  margin: 3rem auto 8rem;
+  margin: 1rem auto 8rem;
   padding: 0 1rem;
   width: 100%;
   position: relative;
@@ -907,7 +919,7 @@
   font-size: 0.9rem;
   position: absolute;
   top: 30%;
-  right: 42%;
+  right: 36%;
 }
 
 .real_collaboration .content_wrapper .roberto {
@@ -992,7 +1004,7 @@
 /* -------------------- No Code Builder Section ------------------- */
 .no_code_builder_container {
   width: 100%;
-  margin: 3rem auto 9rem;
+  margin: 1rem auto 9rem;
   padding: 0 1.25rem;
 }
 
@@ -1033,13 +1045,13 @@
 
 .no_code_builder_container article .feature_box {
   background-color: rgba(243, 243, 243, 0.6);
-  padding: 2.5rem;
+  padding: 2rem 1.25rem;
   border-radius: 26px;
   height: 100%;
   min-height: 530px;
   width: 100%;
+  max-width: 100%;
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
 }
 
@@ -1050,6 +1062,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   flex: 1 1 auto;
   gap: 0.5rem;
@@ -1119,7 +1132,7 @@
 .no_code_builder_container .feature_box .first_banner,
 .no_code_builder_container .feature_box .inner_first_banner {
   width: 100%;
-  min-width: 300px;
+  min-width: 230px;
   max-width: 380px;
   max-height: 220px;
   object-fit: cover;
@@ -1148,14 +1161,11 @@
 }
 
 .no_code_builder_container .second_box .second_box_images {
-  flex: 1 1 auto;
   width: 100%;
   margin: 0 auto;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .no_code_builder_container .second_box .second_box_images div {
@@ -1199,8 +1209,10 @@
   display: inline-block;
 }
 
-.no_code_builder_container .feature_box .second_banner {
-  width: 250px;
+.no_code_builder_container .feature_box .second_banner,
+.no_code_builder_container .feature_box .inner_second_banner {
+  width: 100%;
+  max-width: 250px;
   position: absolute;
   left: 9%;
   top: 36%;
@@ -1222,14 +1234,6 @@
   }
 }
 
-.no_code_builder_container .feature_box .inner_second_banner {
-  width: 250px;
-  position: absolute;
-  left: 9%;
-  top: 36%;
-  z-index: 10;
-}
-
 .no_code_builder_container .feature_box .inner_second_banner.active {
   z-index: 20;
   top: 30%;
@@ -1246,7 +1250,8 @@
 }
 
 .no_code_builder_container .feature_box.fourth_box img {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin-top: 2rem;
 }
 
@@ -1254,6 +1259,28 @@
   .no_code_builder_container {
     max-width: 90%;
     padding: 0;
+  }
+
+  .no_code_builder_container .feature_box .first_banner,
+  .no_code_builder_container .feature_box .inner_first_banner {
+    min-width: 300px;
+  }
+
+  .no_code_builder_container .feature_box .second_banner,
+  .no_code_builder_container .feature_box .inner_second_banner {
+    width: 250px;
+  }
+
+  .no_code_builder_container article .feature_box {
+    padding: 2.5rem;
+  }
+
+  .no_code_builder_container .second_box .second_box_images {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
