@@ -1,6 +1,7 @@
 /* ---------------------- Companies Section ----------------------- */
 .companies_container {
-    margin: 4rem auto;
+    margin: 0 auto 9rem;
+    position: relative
   }
   
   .companies_container p {
@@ -16,14 +17,14 @@
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    position: relative;
-    margin: 4rem auto;
+    margin: 2rem auto;
   }
-  
-  /* Inner wrapper for animation */
-  .image-slider-container .image-slider {
-    display: inline-block;
-    animation: slideRight 20s linear infinite;
+
+  .image-slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 60px;
+    border-radius: 14px;
   }
   
   .image-slider-container .image-slider img {
@@ -35,11 +36,20 @@
   
   /* Keyframes for sliding effect */
   @keyframes slideRight {
-    from {
-      transform: translateX(0);
+    0% {
+      left: -100%;
     }
-    to {
-      transform: translateX(100%);
+    100% {
+      left: 100%
+    }
+  }
+
+  @keyframes slideRightSec {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%
     }
   }
   
@@ -51,7 +61,7 @@
     content: "";
     display: block;
     flex-shrink: 0;
-    width: 100%; /* Ensures images repeat seamlessly */
+    width: 100%;
   }
   
   @media screen and (min-width: 1000px) {

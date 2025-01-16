@@ -1,0 +1,123 @@
+.features_hero_container {
+    width: 100%;
+    margin: 2.5rem auto 2rem;
+    padding: 0 1.15rem;
+}
+
+.features_hero_container .features_insight {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: rgba(89, 38, 218, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 19px;
+    width: fit-content;
+    margin: 1rem 0 2rem;
+}
+
+.features_insight img {
+    width: 18px;
+}
+
+.features_insight span {
+    font-size: 14px;
+    color: var(--purple);
+}
+
+.features_hero_container .content_wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.features_hero_container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.features_hero_container p {
+    color: var(--dark);
+    line-height: 1.75rem;
+    padding: 2rem 0 2rem;
+    max-width: 95%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.features_hero_container .content_wrapper a {
+    padding: 1.15rem 2.5rem;
+    background-color: var(--dark);
+    border-radius: 26px;
+    color: var(--white);
+    white-space: nowrap;
+    font-weight: 600;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    z-index: 10;
+}
+
+.features_hero_images {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 97%;
+    margin: 0 auto 18rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.features_hero_images .group_of_team_members {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.features_hero_images .team_dashboard {
+    position: absolute;
+    display: block;
+    top: 22%;
+    width: 65%;
+    height: 100%;
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .features_hero_container {
+        max-width: 82%;
+        margin: 5.5rem auto 3rem;
+        padding: 0;
+    }
+
+    .features_hero_container .content_wrapper {
+        flex-direction: row;
+    }
+
+    .features_hero_container h2 {
+        font-size: 5.5rem;
+        line-height: 5.25rem;
+        letter-spacing: -4px;
+    }
+
+    .features_hero_container p {
+        padding: 2.5rem 0 1rem;
+        max-width: 50%;
+    }
+
+    .features_hero_images {
+        max-height: 100%;
+    }
+
+    .features_hero_images .team_dashboard {
+        width: 85%;
+        top: 11%;
+    }
+}

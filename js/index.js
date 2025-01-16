@@ -1,5 +1,5 @@
-
-/* ------------------------------------- Slider on Home Page - Hero Section ---------------------------------- */const slides = document.querySelectorAll(".slide");
+window.addEventListener("DOMContentLoaded", () => {
+  /* ------Slider on Home Page - Hero Section -------- */const slides = document.querySelectorAll(".slide");
 const slideFooterIndicators = document.querySelectorAll(".indicator");
 let currentSlide = 0;
 
@@ -7,34 +7,33 @@ const slideContent = document.querySelectorAll(".slide_content");
 
 function changeSlide(index) {
   // Remove active class from all slides and indicators
-  slides.forEach((slide) => slide.classList.remove("active"));
+  slides.forEach((slide) => slide?.classList?.remove("active"));
 
   slideFooterIndicators.forEach((indicator) =>
-    indicator.classList.remove("active")
+    indicator?.classList?.remove("active")
   );
 
-  // Add active class to the current slide and indicator
-  slides[index].classList.add("active");
-  slideFooterIndicators[index].classList.add("active");
+  slides[index]?.classList?.add("active");
+  slideFooterIndicators[index]?.classList?.add("active");
 
   // Update the background color of the active indicator
   slideFooterIndicators.forEach((indicator) => {
     const indicatorId = parseInt(indicator.getAttribute("data-id"));
 
     if (index === indicatorId) {
-      indicator.classList.add("active");
+      indicator?.classList?.add("active");
     } else {
-      indicator.classList.remove("active");
+      indicator?.classList?.remove("active");
     }
   });
 
   slideContent.forEach((slide, i) => {
     if (index === i) {
       setTimeout(() => {
-        slide.classList.add("active");
+        slide?.classList?.add("active");
       }, 1000);
     } else {
-      slide.classList.remove("active");
+      slide?.classList?.remove("active");
     }
   });
 
@@ -54,6 +53,7 @@ const desktopNavigationContainer = document.querySelector(
 );
 
 const productContainer = document.querySelector(".products");
+const teamProducts = document.querySelector(".team_product")
 const solutionsContainer = document.querySelector(".solutions");
 const resourcesContainer = document.querySelector(".resources");
 const desktopNavOverlay = document.querySelector(".desktop_navigation_overlay");
@@ -64,40 +64,40 @@ const resourcesUl = document.querySelector(".resources_ul");
 
 /* ---------------------------- Navbar for Desktop View --------------------------- */
 desktopNavigationContainer.addEventListener("mouseleave", () => {
-  desktopNavigationContainer.classList.remove(
+  desktopNavigationContainer?.classList?.remove(
     "desktop_navigation_container_show"
   );
-  desktopNavOverlay.classList.remove("desktop_navigation_overlay_show");
+  desktopNavOverlay?.classList?.remove("desktop_navigation_overlay_show");
 });
 
 /* ------------- Product Nav ----------------------- */
 productContainer.addEventListener("mouseover", () => {
-  solutionsUl.classList.remove("show_solutions_ul");
-  resourcesUl.classList.remove("show_resources_ul");
+  solutionsUl?.classList?.remove("show_solutions_ul");
+  resourcesUl?.classList?.remove("show_resources_ul");
 
-  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
-  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
-  productsUl.classList.add("show_products_ul");
+  desktopNavigationContainer?.classList?.add("desktop_navigation_container_show");
+  desktopNavOverlay?.classList?.add("desktop_navigation_overlay_show");
+  productsUl?.classList?.add("show_products_ul");
 });
 
 /* ------------- Solutions Nav ----------------------- */
 solutionsContainer.addEventListener("mouseover", () => {
-  productsUl.classList.remove("show_products_ul");
-  resourcesUl.classList.remove("show_resources_ul");
+  productsUl?.classList?.remove("show_products_ul");
+  resourcesUl?.classList?.remove("show_resources_ul");
 
-  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
-  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
-  solutionsUl.classList.add("show_solutions_ul");
+  desktopNavigationContainer?.classList?.add("desktop_navigation_container_show");
+  desktopNavOverlay?.classList?.add("desktop_navigation_overlay_show");
+  solutionsUl?.classList?.add("show_solutions_ul");
 });
 
 /* ------------- Resources Nav ----------------------- */
 resourcesContainer.addEventListener("mouseover", () => {
-  productsUl.classList.remove("show_products_ul");
-  solutionsUl.classList.remove("show_solutions_ul");
+  productsUl?.classList?.remove("show_products_ul");
+  solutionsUl?.classList?.remove("show_solutions_ul");
 
-  desktopNavigationContainer.classList.add("desktop_navigation_container_show");
-  desktopNavOverlay.classList.add("desktop_navigation_overlay_show");
-  resourcesUl.classList.add("show_resources_ul");
+  desktopNavigationContainer?.classList?.add("desktop_navigation_container_show");
+  desktopNavOverlay?.classList?.add("desktop_navigation_overlay_show");
+  resourcesUl?.classList?.add("show_resources_ul");
 });
 
 /* -------------------------------------- No Code Builder Image Slider ------------------------------------ */
@@ -106,20 +106,20 @@ const innerFirstBanner = document.querySelector(".inner_first_banner");
 const secondBannner = document.querySelector(".second_banner");
 const innerSecondBanner = document.querySelector(".inner_second_banner");
 
-secondBannner.classList.add("active");
-firstBanner.classList.add("active");
+secondBannner?.classList?.add("active");
+firstBanner?.classList?.add("active");
 
 setInterval(() => {
-  if (secondBannner.classList.contains("active")) {
-    secondBannner.classList.remove("active");
-    innerSecondBanner.classList.add("active");
-    innerFirstBanner.classList.add("active");
+  if (secondBannner?.classList?.contains("active")) {
+    secondBannner?.classList?.remove("active");
+    innerSecondBanner?.classList?.add("active");
+    innerFirstBanner?.classList?.add("active");
   } else {
-    innerSecondBanner.classList.remove("active");
-    secondBannner.classList.add("active");
+    innerSecondBanner?.classList?.remove("active");
+    secondBannner?.classList?.add("active");
 
-    innerFirstBanner.classList.remove("active");
-    firstBanner.classList.add("active");
+    innerFirstBanner?.classList?.remove("active");
+    firstBanner?.classList?.add("active");
   }
 }, 3000);
 
@@ -131,11 +131,11 @@ let currentContentBox = 0;
 
 function changeActiveContent(index) {
   // Remove active class from all slides and indicators
-  contentBox.forEach((content) => content.classList.remove("active"));
-  platformImage.forEach((image) => image.classList.remove("active"));
+  contentBox.forEach((content) => content?.classList?.remove("active"));
+  platformImage.forEach((image) => image?.classList?.remove("active"));
 
-  contentBox[index].classList.add("active");
-  platformImage[index].classList.add("active");
+  contentBox[index]?.classList?.add("active");
+  platformImage[index]?.classList?.add("active");
 
   contentBox.forEach((content, i) => {
     content.addEventListener("click", () => {
@@ -161,20 +161,20 @@ const mobileNavMenuContainer = document.querySelector(
 const closeMobileMenuButton = document.querySelector(".close_moblie_menu");
 
 menuButton.addEventListener("click", () => {
-  mobileNavMenuContainer.classList.add("mobile_nav_menu_container_show");
-  desktopNavOverlay.classList.add("desktop_navigation_overlay_show")
+  mobileNavMenuContainer?.classList?.add("mobile_nav_menu_container_show");
+  desktopNavOverlay?.classList?.add("desktop_navigation_overlay_show")
 });
 
 closeMobileMenuButton.addEventListener("click", () => {
-  mobileNavMenuContainer.classList.remove("mobile_nav_menu_container_show");
-  desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
+  mobileNavMenuContainer?.classList?.remove("mobile_nav_menu_container_show");
+  desktopNavOverlay?.classList?.remove("desktop_navigation_overlay_show")
 
-  backButton.classList.remove("back_button_show")
-  menuContentWrapper.classList.remove("menu_content_wrapper_hide")
+  backButton?.classList?.remove("back_button_show")
+  menuContentWrapper?.classList?.remove("menu_content_wrapper_hide")
 
-  mobileProductsSubmenu.classList.remove("mobile_products_submenu_show")
-  mobileSolutionsSubmenu.classList.remove("mobile_solutions_submenu_show")
-  mobileResourcesSubmenu.classList.remove("mobile_resources_submenu_show")
+  mobileProductsSubmenu?.classList?.remove("mobile_products_submenu_show")
+  mobileSolutionsSubmenu?.classList?.remove("mobile_solutions_submenu_show")
+  mobileResourcesSubmenu?.classList?.remove("mobile_resources_submenu_show")
   
   menuHeadingText.textContent = 'Menu'
 });
@@ -195,39 +195,41 @@ const backButton = document.querySelector(".back_button")
 
 /* --------------- Products --------------- */
 productSubmenu.addEventListener("click", () => {
-  mobileProductsSubmenu.classList.add("mobile_products_submenu_show")
-  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+  mobileProductsSubmenu?.classList?.add("mobile_products_submenu_show")
+  menuContentWrapper?.classList?.add("menu_content_wrapper_hide")
 
   menuHeadingText.textContent = 'Products'
-  backButton.classList.add("back_button_show")
+  backButton?.classList?.add("back_button_show")
 })
 
 /* --------------- Solutions --------------- */
 solutionSubmenu.addEventListener("click", () => {
-  mobileSolutionsSubmenu.classList.add("mobile_solutions_submenu_show")
-  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+  mobileSolutionsSubmenu?.classList?.add("mobile_solutions_submenu_show")
+  menuContentWrapper?.classList?.add("menu_content_wrapper_hide")
 
   menuHeadingText.textContent = 'Solutions'
-  backButton.classList.add("back_button_show")
+  backButton?.classList?.add("back_button_show")
 })
 
 /* --------------- Resources --------------- */
 resourcesSubmenu.addEventListener("click", () => {
-  mobileResourcesSubmenu.classList.add("mobile_resources_submenu_show")
-  menuContentWrapper.classList.add("menu_content_wrapper_hide")
+  mobileResourcesSubmenu?.classList?.add("mobile_resources_submenu_show")
+  menuContentWrapper?.classList?.add("menu_content_wrapper_hide")
 
   menuHeadingText.textContent = 'Learn'
-  backButton.classList.add("back_button_show")
+  backButton?.classList?.add("back_button_show")
 })
 
 /* --------------- Mobile Submenu Back Button ----------------- */
 backButton.addEventListener("click", () => {
-  backButton.classList.remove("back_button_show")
-  menuContentWrapper.classList.remove("menu_content_wrapper_hide")
+  backButton?.classList?.remove("back_button_show")
+  menuContentWrapper?.classList?.remove("menu_content_wrapper_hide")
 
-  mobileProductsSubmenu.classList.remove("mobile_products_submenu_show")
-  mobileSolutionsSubmenu.classList.remove("mobile_solutions_submenu_show")
-  mobileResourcesSubmenu.classList.remove("mobile_resources_submenu_show")
+  mobileProductsSubmenu?.classList?.remove("mobile_products_submenu_show")
+  mobileSolutionsSubmenu?.classList?.remove("mobile_solutions_submenu_show")
+  mobileResourcesSubmenu?.classList?.remove("mobile_resources_submenu_show")
   
   menuHeadingText.textContent = 'Menu'
+})
+
 })

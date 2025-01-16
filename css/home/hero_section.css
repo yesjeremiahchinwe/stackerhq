@@ -15,11 +15,12 @@ header {
   gap: 1rem;
   justify-content: space-between;
   padding: 1.15rem 1.25rem 1rem 1.35rem;
+  z-index: 400;
 }
 
 header a {
   flex: 1 1 15%;
-  z-index: 50;
+  z-index: 50
 }
 
 header .desktop_navigation {
@@ -29,6 +30,7 @@ header .desktop_navigation {
   justify-content: center;
   gap: 1.5rem;
   z-index: 115;
+  margin-top: -0.2rem;
 }
 
 header .desktop_navigation small {
@@ -45,13 +47,15 @@ header .signInButton {
 }
 
 header .signInButton a {
-  padding: 0.65rem 0.5rem;
+  padding: 0.65rem 1rem;
   width: fit-content;
   background-color: rgba(128, 128, 128, 0.1);
   border-radius: 19px;
   border: none;
   text-decoration: none;
   color: var(--dark);
+  font-weight: 500;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;

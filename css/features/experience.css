@@ -1,0 +1,131 @@
+.experience_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.experience_container h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.experience_container .experience_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    background-color: rgba(243, 243, 243, 0.7);
+    padding: 0.4rem;
+    border-radius: 26px;
+}
+
+.experience_container .experience_navigation button {
+    border: none;
+    border-radius: 26px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+.experience_container .experience_navigation button:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.experience_container .experience_navigation button.show_active_button {
+    background-color: var(--white);
+    font-weight: 600;
+}
+
+.experience_container .experience_navigation button.show_active_button button:hover {
+    background-color: transparent;
+}
+
+.experience_container article {
+    display: none;
+    justify-content: space-between;
+}
+
+.experience_container article.show_active_article {
+    display: flex;
+}
+
+.experience_container article .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+}
+
+.experience_container article .icon_box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 243, 243, 0.7);
+}
+
+.experience_container article h4 {
+    font-size: 1.75rem;
+    padding: 2rem 0;
+}
+
+.experience_container article p {
+    color: var(--gray);
+    line-height: 1.5rem;
+}
+
+.experience_container article .image_wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(243, 243, 243, 0.7);
+    border-radius: 1rem;
+}
+
+.experience_container article .image_wrapper img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experience_container article a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+    /* .experience_container {} */
+}
+
+@media screen and (min-width: 1200px) {
+    .experience_container {
+        width: 82%;
+    }
+
+    .experience_container h2 {
+        font-size: 3.25rem;
+    }
+
+    .experience_container article h4 {
+        max-width: 60%;
+    }
+
+    .experience_container article p {
+        max-width: 79%;
+    }
+
+    .experience_container article .image_wrapper {
+        max-width: 50%;
+    }
+}

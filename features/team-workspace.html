@@ -1,12 +1,915 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Workspace | Software that's as unique as your business</title>
-    <meta name="description" content="Stacker is the software system that makes it easy to build custom CRMs, internal tools, customer portals and other business applications for your team. In minutes, not months. No coding required." />
-</head>
-<body>
-    <h1>Team Workspace Page</h1>
-</body>
+    <meta
+      name="description"
+      content="Stacker is the software system that makes it easy to build custom CRMs, internal tools, customer portals and other business applications for your team. In minutes, not months. No coding required."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/home/hero_section.css" />
+    <link rel="stylesheet" href="/css/features/features_header.css" />
+    <link rel="stylesheet" href="/css/features/features_hero.css" />
+    <link rel="stylesheet" href="/css/home/companies.css" />
+    <link rel="stylesheet" href="/css/features/features_core_software.css" />
+    <link rel="stylesheet" href="/css/features/experience.css" />
+    <link rel="stylesheet" href="/css/home/create_stacker_banner.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <!-- --------------- Desktop Header Navigation ---------------- -->
+    <header class="features_header_container">
+      <div>
+        <a href="/index.html" class="stacker_logo">
+          <img src="/assets/images/svgs/stacker.svg" alt="Stacker Logo" />
+        </a>
+
+        <ul class="desktop_navigation">
+          <li>
+            <small class="products team_product">Product</small>
+          </li>
+          <li>
+            <small class="solutions">Solutions</small>
+          </li>
+          <li>
+            <small class="resources">Resources</small>
+          </li>
+          <li>
+            <a href="#" class="pricing">Pricing</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menuButton">
+        <span>Menu</span>
+      </div>
+
+      <div class="login_signup_links">
+        <div class="signInButton">
+          <a href="/login.html">Sign In</a>
+        </div>
+
+        <div class="signUpButton">
+          <a href="/login.html">Try Stacker for free</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- -------------------- Mobile Navigation Menu ---------------- -->
+    <section class="mobile_nav_menu_container">
+      <button class="back_button">Go Back</button>
+      <button class="close_moblie_menu">Close</button>
+
+      <div class="menu_content_wrapper">
+        <h3 class="headingText">Menu</h3>
+
+        <ul>
+          <li class="product_submenu">
+            <h6>Product</h6>
+            <img
+              src="/assets/images/svgs/chevron_right_dark.svg"
+              alt="Chevron Right"
+            />
+          </li>
+
+          <li class="solution_submenu">
+            <h6>Solutions</h6>
+            <img
+              src="/assets/images/svgs/chevron_right_dark.svg"
+              alt="Chevron Right"
+            />
+          </li>
+
+          <li class="resources_submenu">
+            <h6>Resources</h6>
+            <img
+              src="/assets/images/svgs/chevron_right_dark.svg"
+              alt="Chevron Right"
+            />
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+
+        <!-- -------- Submenu - Products --------- -->
+        <div class="mobile_products_submenu">
+          <li>
+            <a href="#">
+              <img
+                src="/assets/images/svgs/team_workspace.svg"
+                alt="Team Workspace"
+              />
+              <div>
+                <h6>Team Workspace</h6>
+                <p>
+                  Keep track of the information that&apos;s important to you
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/assets/images/svgs/flexible_database.svg"
+                alt="Flexible Database"
+              />
+              <div>
+                <h6>Flexible Database</h6>
+                <p>
+                  Manage every job from creation to completion, effortlessly
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="/assets/images/svgs/collaboration.svg"
+                alt="Collaboration"
+              />
+              <div>
+                <h6>Collaboration</h6>
+                <p>Delight your customers with a self-service experience</p>
+              </div>
+            </a>
+          </li>
+        </div>
+
+        <!-- -------- Submenu - Solutions --------- -->
+        <div class="mobile_solutions_submenu">
+          <li>
+            <a href="#">
+              <img src="/assets/images/svgs/boxes.svg" alt="" />
+              <div>
+                <h6>Flexible CRM</h6>
+                <p>
+                  Keep track of the information that&apos;s important to you
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/svgs/journal-text.svg" alt="Journal" />
+              <div>
+                <h6>Custom ERP</h6>
+                <p>
+                  Manage every job from creation to completion, effortlessly
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/images/svgs/people.svg" alt="" />
+              <div>
+                <h6>Customer Portal</h6>
+                <p>Delight your customers with a self-service experience</p>
+              </div>
+            </a>
+          </li>
+        </div>
+
+        <!-- -------- Submenu - Resources --------- -->
+        <div class="mobile_resources_submenu">
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Tutorials</a>
+          </li>
+          <li>
+            <a href="/experts.html">Experts</a>
+          </li>
+          <li>
+            <a href="/community.html">Community</a>
+          </li>
+          <li>
+            <a href="/template/customer-portal.html">Templates</a>
+          </li>
+        </div>
+
+        <div class="action_links">
+          <a href="/login.html">Sign in</a>
+          <a href="/login.html">Try Stacker for free</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------- Desktop Navigation Menu ------------------ -->
+    <section class="desktop_navigation_container">
+      <!-- ------------- Product Navigation Menu -------------- -->
+      <nav>
+        <ul class="solutions_ul">
+          <div>
+            <h4>Solutions</h4>
+
+            <div class="product_items">
+              <li>
+                <a href="#">
+                  <img src="/assets/images/svgs/boxes.svg" alt="Boxes" />
+                  <div>
+                    <h6>Flexible CRM</h6>
+                    <p>
+                      Keep track of the information that&apos;s important to you
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/svgs/journal-text.svg"
+                    alt="Journal"
+                  />
+                  <div>
+                    <h6>Work Management</h6>
+                    <p>
+                      Manage every job from creation to completion, effortlessly
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/images/svgs/people.svg" alt="People" />
+                  <div>
+                    <h6>Customer Portal</h6>
+                    <p>Delight your customers with a self-service experience</p>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </div>
+
+          <div class="product_items second_list">
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/custom_erp.svg"
+                  alt="Custom ERP"
+                />
+                <div>
+                  <h6>Customer ERP</h6>
+                  <p>Give your customers and clients a fully self-serve app</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/arrow-repeat.svg"
+                  alt="Arrow repeat"
+                />
+                <div>
+                  <h6>Process Tracker</h6>
+                  <p>Tickets, request, applications, and approvals</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/users_black.svg"
+                  alt="Users Menu"
+                />
+                <div>
+                  <h6>Partner Portal</h6>
+                  <p>
+                    Upgrade your collaboration with partners, prospects, and
+                    vendors
+                  </p>
+                </div>
+              </a>
+            </li>
+          </div>
+
+          <div>
+            <h4>Explore</h4>
+
+            <div class="product_items last_list">
+              <li>
+                <a href="#">Technology</a>
+              </li>
+              <li>
+                <a href="#">Professional Services</a>
+              </li>
+              <li>
+                <a href="#">Media</a>
+              </li>
+              <li>
+                <a href="#">Education</a>
+              </li>
+              <li>
+                <a href="#">Logistics</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- ------------- Products Navigation Menu -------------- -->
+      <nav>
+        <ul class="products_ul">
+          <div>
+            <h4>Features</h4>
+
+            <div class="product_items">
+              <li>
+                <a href="/features/team-workspace.html">
+                  <img
+                    src="/assets/images/svgs/team_workspace.svg"
+                    alt="Team Workspace"
+                  />
+                  <div>
+                    <h6>Team Workspace</h6>
+                    <p>
+                      Keep track of the information that&apos;s important to you
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/svgs/flexible_database.svg"
+                    alt="Flexible Database"
+                  />
+                  <div>
+                    <h6>Flexible Database</h6>
+                    <p>
+                      Manage every job from creation to completion, effortlessly
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/svgs/arrow-repeat.svg"
+                    alt="Collaboration"
+                  />
+                  <div>
+                    <h6>Collaboration</h6>
+                    <p>Delight your customers with a self-service experience</p>
+                  </div>
+                </a>
+              </li>
+            </div>
+          </div>
+
+          <div class="product_items second_list">
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/users_menu_icon.svg"
+                  alt="User Icon"
+                />
+                <div>
+                  <h6>Portals</h6>
+                  <p>Give your customers and clients a fully self-serve app</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/app_ui_icon.svg"
+                  alt="Collaboration"
+                />
+                <div>
+                  <h6>APP UI</h6>
+                  <p>Tickets, request, applications, and approvals</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/svgs/arrow-repeat.svg"
+                  alt="Collaboration"
+                />
+                <div>
+                  <h6>Integrate and Automate</h6>
+                  <p>
+                    Upgrade your collaboration with partners, prospects, and
+                    vendors
+                  </p>
+                </div>
+              </a>
+            </li>
+          </div>
+
+          <div>
+            <h4>Explore</h4>
+
+            <div class="product_items last_list">
+              <li>
+                <a href="#">Customer Stories</a>
+              </li>
+              <li>
+                <a href="#">Tutorials</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- ------------- Resources Navigation Menu -------------- -->
+      <nav>
+        <ul class="resources_ul">
+          <li>
+            <a href="">My Resources</a>
+          </li>
+          <li>
+            <a href="">My Resources</a>
+          </li>
+          <li>
+            <a href="">My Resources</a>
+          </li>
+          <li>
+            <a href="">My Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- ----------------- Overlay on Desktop Navigations ------------ -->
+    <div class="desktop_navigation_overlay"></div>
+
+    <!-- ---------------- Hero Section ----------------- -->
+    <section class="features_hero_container">
+      <div class="features_insight">
+        <img
+          src="/assets/images/svgs/team_workspace.svg"
+          alt="Team Workspace"
+        />
+        <span>Team Workspace</span>
+      </div>
+
+      <div class="content_wrapper">
+        <div>
+          <h2>A single place for</h2>
+          <h2>your team's work</h2>
+          <p>
+            Stacker makes it easy to build customer portals, CRMs, internal
+            tools, and other business applications for your team. In minutes,
+            not months.
+          </p>
+        </div>
+
+        <a href="/login.html">Get started for free</a>
+      </div>
+    </section>
+
+    <div class="features_hero_images">
+      <img
+        src="/assets/images/team_members.avif"
+        alt="Group of team members"
+        class="group_of_team_members"
+      />
+      <img
+        src="/assets/images/team_dashboard.avif"
+        alt="Team creation Dashboard"
+        class="team_dashboard"
+      />
+    </div>
+
+    <!-- --------------------- Companies Section ------------------------- -->
+    <section class="companies_container">
+      <p><span>+88,500</span> high-performing teams at</p>
+      <p>companies worldwide build with Stacker</p>
+
+      <div class="image-slider-container">
+        <div class="image-slider">
+          <img src="/assets/images/svgs/accenture.svg" alt="Accenture" />
+          <img src="/assets/images/svgs/amazon.svg" alt="Amazon" />
+          <img src="/assets/images/svgs/fedex.svg" alt="FedEx" />
+          <img src="/assets/images/svgs/google.svg" alt="Google" />
+          <img src="/assets/images/svgs/imb.svg" alt="IBM" />
+          <img src="/assets/images/svgs/mapfre.svg" alt="Mapfre" />
+          <img src="/assets/images/svgs/nike.svg" alt="NIKE" />
+          <img src="/assets/images/svgs/poscre.svg" alt="Posche" />
+          <img src="/assets/images/svgs/samsung.svg" alt="Samsung" />
+          <img src="/assets/images/svgs/segment.svg" alt="Segment" />
+
+          <img src="/assets/images/svgs/accenture.svg" alt="Accenture" />
+          <img src="/assets/images/svgs/amazon.svg" alt="Amazon" />
+          <img src="/assets/images/svgs/fedex.svg" alt="FedEx" />
+          <img src="/assets/images/svgs/google.svg" alt="Google" />
+          <img src="/assets/images/svgs/imb.svg" alt="IBM" />
+          <img src="/assets/images/svgs/mapfre.svg" alt="Mapfre" />
+          <img src="/assets/images/svgs/nike.svg" alt="NIKE" />
+          <img src="/assets/images/svgs/poscre.svg" alt="Posche" />
+          <img src="/assets/images/svgs/samsung.svg" alt="Samsung" />
+          <img src="/assets/images/svgs/segment.svg" alt="Segment" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- Core Software Builder Section ---------------------------- -->
+    <section class="features_software_container">
+      <div class="heading">
+        <div>
+          <h3>The core system powering</h3>
+          <h3>the heart of your business</h3>
+        </div>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div class="features_software_wrapper">
+        <article>
+          <div class="">
+            <h5>Create</h5>
+            <h4>
+              A suite of apps that perfectly fit your business&apos;s needs
+            </h4>
+          </div>
+
+          <div class="features_images_wrapper">
+            <img src="/assets/images/svgs/flex.svg" alt="Group of images" />
+          </div>
+
+          <div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>A central workspace for your team for all your operations</p>
+            </div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>
+                Keep everything connected by creating links between applications
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="">
+            <h5>Collaborate</h5>
+            <h4>The right access for everyone</h4>
+          </div>
+
+          <div class="features_images_wrapper">
+            <img
+              src="/assets/images/edit_emplyee.avif"
+              alt="Edit Employee interface"
+            />
+          </div>
+
+          <div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>Give everyone access to the apps they need</p>
+            </div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>Assign users to groups to make management easy</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="">
+            <h5>Centralize</h5>
+            <h4>No more hunting for that one elusive spreadsheet</h4>
+          </div>
+
+          <div class="features_images_wrapper">
+            <img
+              src="/assets/images/centralize.avif"
+              alt="Centralize Interface"
+            />
+          </div>
+
+          <div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>Create one single source of truth for operational processes</p>
+            </div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>Centralize your data</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="">
+            <h5>Share</h5>
+            <h4>
+              Work with clients, partners and external stakeholders in
+              self-serve portal
+            </h4>
+          </div>
+
+          <div class="features_images_wrapper">
+            <img src="/assets/images/svgs/flex.svg" alt="" />
+          </div>
+
+          <div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>
+                Transform how you interact with customers, partners, contractors
+                and more
+              </p>
+            </div>
+            <div class="features_details">
+              <img src="/assets/images/svgs/check-lg.svg" alt="Check mark" />
+              <p>Share data securely with your external stakeholders</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- --------------------- Exceptional Experience ------------------ -->
+    <section class="experience_container">
+      <h2>The platform for operational excellence</h2>
+
+      <div class="experience_navigation">
+        <button>Flexible CRM</button>
+        <button>Customer Portal</button>
+        <button>Work Management</button>
+        <button>Process Tracking</button>
+        <button>Modern ERP</button>
+        <button>Partner hub</button>
+      </div>
+
+      <article class="article_elem show_active_article">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">A CRM that's as flexible as you</h4>
+            <p>
+              Track every customer interaction with a Stacker CRM so you can
+              impress with your knowledge of each of your contact's businesses
+              and needs.
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Track customers with a bespoke CRM
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_flexible.avif" alt="Flexible CRM" />
+        </div>
+      </article>
+
+      <article class="article_elem">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">Transform your customer experience</h4>
+            <p>
+              Allow your customers to view and update their data, make requests, and interact with self-service portal
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Create a branded portal for your business
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_customer.avif" alt="Customer" />
+        </div>
+      </article>
+
+      <article class="article_elem">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">Distributed work, managed end-to-end</h4>
+            <p>
+              Manage every job from creation to completion, effortlessly, with work management trackers and work order portals
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Streamline your internal project management
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_work.avif" alt="Work" />
+        </div>
+      </article>
+
+      <article class="article_elem">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">Make processes run seamlessly</h4>
+            <p>
+              From requests to approvals, from tickets to work orders, make every process run smoothly with a fully customized workflow
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Optimize your processes with Stacker
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_process.avif" alt="Process" />
+        </div>
+      </article>
+
+      <article class="article_elem">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">An ERP that fits perfectly</h4>
+            <p>
+              Create the core system that powers your business and fits your processes perfectly.
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Use Stacker to power your business
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_modern.avif" alt="Modern" />
+        </div>
+      </article>
+
+      <article class="article_elem">
+        <div class="content">
+          <div>
+            <div class="icon_box">
+              <img src="/assets/images/svgs/black_box.svg" alt="Black Box" />
+            </div>
+
+            <h4 class="heading">Say goodbye to email tennis</h4>
+            <p>
+              Upgrade your collaboration with partners, prospects and vendors, with a full partner operations app and matching portal.
+            </p>
+          </div>
+
+          <a href="/solutions/flexible-crm.html"
+            >Let Stacker optimize your partner communication
+            <img src="/assets/images/svgs/chevron_right.svg" alt="Chevron" />
+          </a>
+        </div>
+
+        <div class="image_wrapper">
+          <img src="/assets/images/exp_partner.avif" alt="Partner" />
+        </div>
+      </article>
+    </section>
+
+    <!-- --------------- Stacker Big Banner ------------------ -->
+    <section class="create_stacker_banner_container">
+      <div class="create_stacker_wrapper">
+        <img
+          src="/assets/images/a_lady_and_a_man.webp"
+          alt="A lady and a man sitting before their computers"
+        />
+      </div>
+
+      <div class="inner_content">
+        <div>
+          <img src="/assets/images/svgs/white_stacker.svg" alt="Stacker Logo" />
+          <h3>Create software that fits you perfectly</h3>
+
+          <div class="inner_content_action_buttons">
+            <a href="#">Try Stacker for free</a>
+            <a href="#">Book a demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner_content_overlay"></div>
+    </section>
+
+    <footer>
+      <div class="footer_container">
+        <div class="logo_wrapper">
+          <img src="/assets/images/svgs/stacker.svg" alt="Stacker logo" />
+        </div>
+
+        <article>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#">Cookie policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Knowledge center</h4>
+            <ul>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Help Center</a>
+              </li>
+              <li>
+                <a href="#">Service Status</a>
+              </li>
+              <li>
+                <a href="#">Experts</a>
+              </li>
+              <li>
+                <a href="#">Forum</a>
+              </li>
+              <li>
+                <a href="#">Stacker vs Airtable</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Solutions</h4>
+            <ul>
+              <li>
+                <a href="#">Customer Portal</a>
+              </li>
+              <li>
+                <a href="#">Work Management</a>
+              </li>
+              <li>
+                <a href="#">Flexible CRM</a>
+              </li>
+              <li>
+                <a href="#">Process Tracker</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Templates</h4>
+            <ul>
+              <li>
+                <a href="#">Customer Portal</a>
+              </li>
+              <li>
+                <a href="#">Contractor Portal</a>
+              </li>
+              <li>
+                <a href="#">Travel Portal</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/features_page_logic.js"></script>
+  </body>
 </html>
