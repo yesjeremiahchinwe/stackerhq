@@ -1,0 +1,86 @@
+/* ----------------------  Security Section -------------------- */
+.security_container {
+    width: 100%;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    column-gap: 2rem;
+    padding: 0 1.15rem;
+  }
+  
+  .security_container div:first-child {
+    width: 100%;
+  }
+  
+  .security_container small {
+    padding-bottom: 1.5rem;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+  
+  .security_container h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .security_container h4 {
+    width: 100%;
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+    color: var(--gray);
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+  
+  .security_container .images_logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .security_container .images_logos img {
+    width: 100%;
+    max-width: 90px;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .security_container {
+      max-width: 90%;
+      padding: 0;
+    }
+  
+    .security_container div:first-child {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .security_container {
+      max-width: 82%;
+      flex-direction: row;
+    }
+  
+    .security_container h3 {
+      font-size: 2.25rem;
+      line-height: 3rem;
+    }
+  
+    .security_container h4 {
+      max-width: 70%;
+      padding: 0;
+    }
+  
+    .security_container div:last-child {
+      max-width: 70%;
+    }
+  
+    .security_container .images_logos {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

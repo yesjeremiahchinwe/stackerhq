@@ -1,0 +1,294 @@
+/* ---------------- Core Software Section------------------ */
+.core_software_container {
+    margin: 1rem auto;
+    padding: 0 1.25rem;
+  }
+  
+  .core_software_container h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+  }
+  
+  .core_software_container .wrapper {
+    background-color: rgba(243, 243, 243, 0.6);
+    width: 100%;
+    height: 100%;
+    margin: 4rem auto 2rem;
+    border-radius: 18px;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  
+  .core_software_container .wrapper .icon_wrapper {
+    background-color: rgb(255, 166, 0);
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .core_software_container .wrapper .icon_wrapper img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .core_software_container .wrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .core_software_container .wrapper div .desktop_learn_more {
+    display: none;
+  }
+  
+  .core_software_container .wrapper div .mobile_learn_more {
+    display: flex;
+    margin-top: 3rem;
+    padding: 0.75rem 2rem;
+  }
+  
+  .core_software_container .wrapper a {
+    flex-basis: 15%;
+    background-color: rgba(205, 205, 205, 0.4);
+    font-weight: 500;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 0;
+    border-radius: 26px;
+    font-size: 1rem;
+    margin-right: 1.75rem;
+  }
+  
+  .core_software_container .wrapper div div {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  
+  .core_software_container .wrapper,
+  .core_software_container .wrapper div div div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+  
+  .core_software_container .wrapper div div div:last-child h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  
+  .core_software_container .wrapper div div div:last-child p {
+    color: var(--gray);
+  }
+  
+  .core_software_container .wrapper .ted_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .core_software_container .wrapper .ted_content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .core_software_container .ted_content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.65rem;
+  }
+  
+  .core_software_container .wrapper .ted_content div p {
+    color: var(--gray);
+    margin-top: 1rem;
+    max-width: 90%;
+    line-height: 1.5rem;
+  }
+  
+  .core_software_container .wrapper .ted_content div h4:first-child {
+    padding-top: 1.5rem;
+    line-height: 1.65rem;
+  }
+  
+  .core_software_container .wrapper .ted_content img {
+    width: 50%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .core_software_container .features_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .core_software_container .features_container .wrapper {
+    margin: 0;
+    max-height: 100%;
+  }
+  
+  .core_software_container .features_container .wrapper a {
+    margin-right: 0;
+    flex-basis: 35%;
+  }
+  
+  .core_software_container .features_container .wrapper .icon_wrapper {
+    background-color: var(--blue);
+    height: 45px;
+    width: 50px;
+  }
+  
+  .core_software_container
+    .features_container
+    .wrapper
+    .icon_wrapper.portal_icon {
+    background-color: var(--green);
+    height: 45px;
+    width: 50px;
+  }
+  
+  .core_software_container .features_container .wrapper .icon_wrapper img {
+    width: 30px;
+  }
+  
+  .core_software_container .features_container .wrapper .ted_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 0;
+  }
+  
+  .core_software_container
+    .features_container
+    .wrapper
+    .ted_content
+    .group_images {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ted_content .group_images .box_images {
+    width: 100%;
+    max-width: 120px;
+  }
+  
+  .ted_content .group_images .login_form {
+    padding: 1rem;
+    max-width: 250px;
+    min-height: 180px;
+    background-color: var(--white);
+    border-radius: 16px;
+  }
+  
+  .ted_content .group_images .login_form .form_content small {
+    padding: 0.5rem 0;
+    font-size: 11px;
+    color: var(--dark);
+    font-weight: 600;
+  }
+  
+  .ted_content .group_images .login_form .form_content .inputField {
+    background-color: rgba(243, 243, 243, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+  
+  .ted_content .group_images .login_form .form_content .inputField span {
+    color: var(--gray);
+  }
+  
+  .ted_content .group_images .login_form img {
+    width: 100%;
+    max-width: 26px;
+  }
+  
+  .ted_content .group_images .login_form img:last-child {
+    width: 100%;
+    max-width: 100px;
+    margin-top: 0.5rem;
+  }
+  
+  .core_software_container .features_container .wrapper .ted_content h4 {
+    line-height: 2rem;
+  }
+  
+  .core_software_container .features_container .wrapper .ted_content p {
+    margin: 0.5rem;
+    max-width: 100%;
+  }
+  
+  .core_software_container .features_container .wrapper .ted_content img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .core_software_container {
+      max-width: 90%;
+      padding: 0;
+    }
+  
+    .core_software_container .wrapper {
+      padding: 2rem 0 2rem 2rem;
+    }
+  
+    .core_software_container .features_container .wrapper {
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .core_software_container {
+      max-width: 82%;
+    }
+  
+    .core_software_container h3 {
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 2.75rem;
+    }
+  
+    .core_software_container .wrapper .ted_content img {
+      display: flex;
+    }
+  
+    .core_software_container
+      .features_container
+      .wrapper
+      .ted_content
+      .group_images {
+      display: flex;
+    }
+  
+    .core_software_container .wrapper div .desktop_learn_more {
+      display: flex;
+    }
+  
+    .core_software_container .wrapper div .mobile_learn_more {
+      display: none;
+    }
+  
+    .core_software_container .features_container {
+      flex-direction: row;
+    }
+  }

@@ -169,9 +169,14 @@ closeMobileMenuButton.addEventListener("click", () => {
   mobileNavMenuContainer.classList.remove("mobile_nav_menu_container_show");
   desktopNavOverlay.classList.remove("desktop_navigation_overlay_show")
 
+  backButton.classList.remove("back_button_show")
+  menuContentWrapper.classList.remove("menu_content_wrapper_hide")
+
   mobileProductsSubmenu.classList.remove("mobile_products_submenu_show")
   mobileSolutionsSubmenu.classList.remove("mobile_solutions_submenu_show")
   mobileResourcesSubmenu.classList.remove("mobile_resources_submenu_show")
+  
+  menuHeadingText.textContent = 'Menu'
 });
 
 /* -------------------- Mobile Submenu Logic ------------------- */

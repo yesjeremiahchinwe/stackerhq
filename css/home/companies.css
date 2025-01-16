@@ -1,0 +1,63 @@
+/* ---------------------- Companies Section ----------------------- */
+.companies_container {
+    margin: 4rem auto;
+  }
+  
+  .companies_container p {
+    text-align: center;
+    color: var(--gray);
+  }
+  
+  .companies_container p span {
+    color: var(--dark);
+  }
+  
+  .image-slider-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 4rem auto;
+  }
+  
+  /* Inner wrapper for animation */
+  .image-slider-container .image-slider {
+    display: inline-block;
+    animation: slideRight 20s linear infinite;
+  }
+  
+  .image-slider-container .image-slider img {
+    width: auto;
+    height: auto;
+    margin-right: 60px;
+    display: inline-block;
+  }
+  
+  /* Keyframes for sliding effect */
+  @keyframes slideRight {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  .image-slider-container .image-slider {
+    display: flex;
+  }
+  
+  .image-slider-container .image-slider::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 100%; /* Ensures images repeat seamlessly */
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .image-slider-container .image-slider {
+      display: inline-block;
+      animation: slideRight 60s linear infinite;
+    }
+  }
+  

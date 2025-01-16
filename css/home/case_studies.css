@@ -1,0 +1,91 @@
+/* -------------------- Other Case Studies Section -------------------- */
+.case_studies_container {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 0 1.15rem;
+  }
+  
+  .case_studies_container .case_studies_content_wrapper {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .case_studies_container h2 {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+  
+  .case_studies_container .case_studies_content_wrapper .case_studies_content {
+    min-width: 32%;
+    min-height: 350px;
+    border-radius: 19px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .case_studies_container
+    .case_studies_content_wrapper
+    .case_studies_content
+    img {
+    width: 25px;
+    object-fit: contain;
+  }
+  
+  .case_studies_container
+    .case_studies_content_wrapper
+    .case_studies_content
+    img.meow_img {
+    width: 50px;
+  }
+  
+  .case_studies_container
+    .case_studies_content_wrapper
+    .case_studies_content
+    img.zapier_img {
+    width: 80px;
+  }
+  
+  .case_studies_container .case_studies_content_wrapper .case_studies_content h6 {
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+    font-weight: 600;
+    color: var(--light-dark);
+  }
+  
+  .case_studies_container .case_studies_content_wrapper .case_studies_content a {
+    background-color: rgba(243, 243, 243, 0.6);
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-radius: 26px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--dark);
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .case_studies_container {
+      max-width: 90%;
+      padding: 0;
+    }
+  
+    .case_studies_container .case_studies_content_wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .case_studies_container {
+      max-width: 82%;
+    }
+  
+    .case_studies_container .case_studies_content_wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
