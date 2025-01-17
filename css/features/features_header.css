@@ -5,6 +5,8 @@
   gap: 1rem;
   justify-content: space-between;
   padding: 1.15rem;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .features_header_container .desktop_navigation {
@@ -52,6 +54,7 @@
 @media screen and (min-width: 1200px) {
     .features_header_container {
         padding: 1.25rem 2.5rem;
+        max-width: 86%;
     }
 
     .login_signup_links {
