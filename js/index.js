@@ -128,6 +128,7 @@ const contentBox = document.querySelectorAll(".content_box");
 const platformImage = document.querySelectorAll(".platform_image");
 
 let currentContentBox = 0;
+let interationDelay = 4000
 
 function changeActiveContent(index) {
   // Remove active class from all slides and indicators
@@ -137,9 +138,18 @@ function changeActiveContent(index) {
   contentBox[index]?.classList?.add("active");
   platformImage[index]?.classList?.add("active");
 
+  /* ----- Toggle Active Content Box ---------- */
   contentBox.forEach((content, i) => {
+    const contentBoxId = parseInt(content.getAttribute("data-id"))
+
     content.addEventListener("click", () => {
-      currentContentBox = i - 1;
+      if (contentBoxId === i) {
+            content.classList.add("active");
+            changeActiveContent(contentBoxId)
+            interationDelay = 8000
+          } else {
+            content.classList.remove("active");
+          }
     });
   });
 
@@ -149,7 +159,7 @@ function changeActiveContent(index) {
 setInterval(() => {
   let nextContent = (currentContentBox + 1) % contentBox.length;
   changeActiveContent(nextContent);
-}, 3000); // Change slide every 2 seconds
+}, interationDelay); // Change slide every 2 seconds
 
 changeActiveContent(currentContentBox);
 

@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const articleElements = document.querySelectorAll(".article_elem")
 
   let currentExpBtn = 0;
+  let interateDelay = 4000
   experienceNavButtons[currentExpBtn].classList.add("show_active_button");
 
   function changeCurrentExperience(index) {
@@ -15,13 +16,27 @@ window.addEventListener("DOMContentLoaded", () => {
     experienceNavButtons[index].classList.add("show_active_button");
     articleElements[index].classList.add("show_active_article");
 
+    // Toggle active experience view
+    experienceNavButtons.forEach((button, i) => {
+      const buttonId = parseInt(button.getAttribute("data-id"))
+
+      button.addEventListener("click", () => {
+          if (buttonId === i) {
+            button.classList.add("show_active_button");
+            changeCurrentExperience(buttonId)
+            interateDelay = 8000
+          } else {
+            button.classList.remove("show_active_button");
+          }
+      })
+    })
+
     currentExpBtn = index
   }
-
+  
   setInterval(() => {
     let nextSlide = (currentExpBtn + 1) % experienceNavButtons.length;
     changeCurrentExperience(nextSlide);
-  }, 4000); // Change slide every 4 seconds
-  
+  }, interateDelay);
   changeCurrentExperience(currentExpBtn);
 });

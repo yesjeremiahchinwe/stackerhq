@@ -17,11 +17,6 @@
   gap: 2rem;
 }
 
-.features_header_container a {
-  flex: 1 1 15%;
-  z-index: 115;
-}
-
 .login_signup_links {
   display: none;
   align-items: center;

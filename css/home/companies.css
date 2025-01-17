@@ -1,7 +1,7 @@
 /* ---------------------- Companies Section ----------------------- */
 .companies_container {
-    margin: 0 auto 9rem;
-    position: relative
+    margin: 5rem auto;
+    position: relative;
   }
   
   .companies_container p {
@@ -15,16 +15,16 @@
   
   .image-slider-container {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     white-space: nowrap;
     margin: 2rem auto;
+    padding: 0 1rem;
   }
 
-  .image-slider img {
-    width: 100%;
-    height: auto;
-    margin-right: 60px;
-    border-radius: 14px;
+  .image-slider-container::-webkit-scrollbar {
+    display: none;
+    height: 0;
+    width: 0;
   }
   
   .image-slider-container .image-slider img {
@@ -33,9 +33,13 @@
     margin-right: 60px;
     display: inline-block;
   }
+
+  .image-slider-container .image-slider img:last-child {
+    margin-right: 1.25rem;
+  }
   
   /* Keyframes for sliding effect */
-  @keyframes slideRight {
+  /* @keyframes slideRight {
     0% {
       left: -100%;
     }
@@ -51,9 +55,9 @@
     100% {
       left: 100%
     }
-  }
+  } */
   
-  .image-slider-container .image-slider {
+  /* .image-slider-container .image-slider {
     display: flex;
   }
   
@@ -62,12 +66,12 @@
     display: block;
     flex-shrink: 0;
     width: 100%;
-  }
+  } */
   
-  @media screen and (min-width: 1000px) {
+  /* @media screen and (min-width: 1000px) {
     .image-slider-container .image-slider {
       display: inline-block;
       animation: slideRight 60s linear infinite;
     }
-  }
+  } */
   
