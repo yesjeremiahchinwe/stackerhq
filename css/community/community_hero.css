@@ -1,11 +1,12 @@
 .community_hero_container {
     width: 100%;
-    margin: 3rem auto;
+    margin: 2.15rem auto;
     padding: 0 1.15rem;
 }
 
 .community_hero_container h1 {
     font-size: 2.85rem;
+    line-height: 2.85rem;
     font-weight: 600;
 }
 
@@ -72,6 +73,7 @@
 @media screen and (min-width: 1000px) {
     .community_hero_container {
         max-width: 90%;
+        margin: 3rem auto;
     }
 
     .community_hero_container article {
@@ -87,15 +89,18 @@
     .community_hero_container {
         padding: 0;
         max-width: 82%;
+        margin-top: 4rem;
     }
 
     .community_hero_container h1 {
         font-size: 5rem;
+        line-height: 4.5rem;
         padding-top: 0.5rem;
     }
 
     .community_hero_container p {
-        max-width: 50%;
+        max-width: 47%;
+        padding-top: 2.5rem;
     }
 
     .community_hero_container .community_box {

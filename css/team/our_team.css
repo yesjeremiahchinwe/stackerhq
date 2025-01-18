@@ -1,0 +1,212 @@
+.team_container {
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0 1.15rem;
+}
+
+/* ---------- Meet Our Team ------------ */
+.team_container .meet_our_team {
+  display: grid;
+  gap: 1.65rem;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+}
+
+.meet_our_team .team_image_wrapper {
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+}
+
+.meet_our_team .team_image_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.team_container .team_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.75rem;
+  border-radius: 24px;
+  background-color: rgba(243, 243, 243, 0.7);
+  min-height: 320px;
+}
+
+.team_container .team_details h5 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.team_container .team_details p {
+  font-size: 1.17rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+/* -------------- What We Do -------------- */
+.team_container .what_we_do h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+.team_container .what_we_do p {
+  color: var(--gray);
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+/* ------------- What  Makes Us Unique ------------- */
+.team_container .what_makes_unique {
+  margin: 2rem auto 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.team_container .what_makes_unique .icon_box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(243, 243, 243, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team_container .what_makes_unique h6 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 2rem 0 1rem;
+}
+
+.team_container .what_makes_unique p {
+  color: var(--gray);
+  line-height: 1.5rem;
+}
+
+/* ------------- Join Our Team ------------ */
+.team_container .join_our_team {
+  margin: 4rem auto;
+}
+
+.team_container .join_our_team h3 {
+  color: var(--gray);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.team_container .join_our_team .wrapper {
+  display: grid;
+  gap: 2rem;
+}
+
+.team_container .join_our_team h4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding-top: 3rem;
+}
+
+.team_container .join_our_team .join_our_team_img_box {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 150px;
+}
+
+.team_container .join_our_team .join_our_team_img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 21px;
+}
+
+.team_container .join_our_team p {
+  padding-top: 1.5rem;
+  color: var(--gray);
+  line-height: 1.5rem;
+}
+
+.team_container .join_our_team a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.15rem 2rem;
+    background-color: var(--dark);
+    color: var(--white);
+    width: fit-content;
+    margin-top: 1.5rem;
+    border-radius: 29px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .team_container {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .team_container .meet_our_team {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem 0 6rem;
+  }
+
+  .meet_our_team .team_image_wrapper {
+    max-height: 100%;
+    min-height: 480px;
+  }
+
+  .team_container .what_makes_unique {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem auto 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team_container {
+    max-width: 80%;
+  }
+
+  .team_container .team_details {
+    padding: 2.75rem;
+  }
+
+  .team_container .team_details p {
+    font-size: 1.35rem;
+    line-height: 2rem;
+  }
+
+  .team_container .what_we_do h2 {
+    max-width: 50%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .team_container .what_we_do p {
+    max-width: 40%;
+  }
+
+  .team_container .what_makes_unique {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team_container .join_our_team {
+    margin: 6rem auto;
+  }
+
+  .team_container .join_our_team h4 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .team_container .join_our_team .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

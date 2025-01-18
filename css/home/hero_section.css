@@ -860,10 +860,6 @@ header .signInButton a {
   gap: 2rem;
 }
 
-.resource_ul .second_box .resource_items a h6 {
-  color: gray;
-}
-
 @media screen and (min-width: 567px) {
   .hero_content .action_buttons {
     flex-direction: row;
