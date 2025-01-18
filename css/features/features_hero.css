@@ -93,7 +93,7 @@
 @media screen and (min-width: 1200px) {
     .features_hero_container {
         max-width: 82%;
-        margin: 5.5rem auto 3rem;
+        margin: 4rem auto 3rem;
         padding: 0;
     }
 
@@ -103,7 +103,7 @@
 
     .features_hero_container h2 {
         font-size: 5.5rem;
-        line-height: 5.25rem;
+        line-height: 5rem;
         letter-spacing: -4px;
     }
 

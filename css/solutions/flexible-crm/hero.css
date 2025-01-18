@@ -1,0 +1,125 @@
+.flexible_crm_container {
+    width: 100%;
+    margin: 2.5rem auto 2rem;
+    padding: 0 1.15rem;
+}
+
+.flexible_crm_container .features_insight {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: rgba(89, 38, 218, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 19px;
+    width: fit-content;
+    margin: 1rem 0 2rem;
+}
+
+.features_insight img {
+    width: 18px;
+}
+
+.features_insight span {
+    font-size: 14px;
+    color: var(--purple);
+}
+
+.flexible_crm_container .content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexible_crm_container .content_wrapper div:last-of-type {
+    width: 25%;
+}
+
+.flexible_crm_container .content_wrapper div:last-of-type p {
+    font-weight: 500;
+    color: gray;
+    line-height: 1.75rem;
+    padding: 0 0 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.flexible_crm_container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.flexible_crm_container .content_wrapper a {
+    padding: 1.15rem 1.65rem;
+    background-color: var(--dark);
+    border-radius: 29px;
+    color: var(--white);
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+.flexible_crm_container .flexible_crm_hero_img {
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.flexible_crm_container .flexible_crm_hero_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 21px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.flexible_crm_container .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(243, 243, 243, 0.9);
+}
+
+.flexible_crm_container .stats p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.flexible_crm_container .stats p span {
+    color: var(--dark);
+}
+
+@media screen and (min-width: 1200px) {
+    .flexible_crm_container {
+        max-width: 82%;
+        margin: 4rem auto 3rem;
+        padding: 0;
+    }
+
+    .flexible_crm_container .content_wrapper {
+        flex-direction: row;
+    }
+
+    .flexible_crm_container h2 {
+        font-size: 5.5rem;
+        line-height: 5.25rem;
+        letter-spacing: -4px;
+    }
+
+    .flexible_crm_container .content_wrapper p {
+        padding: 2.5rem 0 1rem;
+    }
+
+    .features_hero_images {
+        max-height: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .features_hero_images .team_dashboard {
+        width: 85%;
+        top: 11%;
+    }
+}
