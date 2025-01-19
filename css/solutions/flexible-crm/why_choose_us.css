@@ -2,13 +2,13 @@
     margin: 3rem auto;
     width: 100%;
     padding: 0 1.15rem;
+    position: relative;
 }
 
 .why_choose_us_container h2 {
     font-size: 1.75rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
     font-weight: 600;
-    letter-spacing: -2px;
 }
 
 .why_choose_us_container p {
@@ -19,14 +19,48 @@
 
 .why_choose_us_container .details_overview {
     margin: 3.5rem auto;
-    padding: 0 8rem 0 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
     width: 100%;
-    max-width: 96%;
+    max-width: 99%;
     overflow-x: scroll;
+    position: relative;
+}
+
+.why_choose_us_container .nav_buttons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding: 0 2rem 0 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    top: 52%;
+    z-index: 10;
+}
+
+.why_choose_us_container .nav_buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+/* .why_choose_us_container .nav_buttons button.right_nav_btn {} */
+
+.why_choose_us_container .nav_buttons button.left_nav_btn {
+    margin-left: -0.45rem;
+}
+
+.why_choose_us_container .nav_buttons button img {
+    width: 0.5rem;
 }
 
 .why_choose_us_container .details_overview::-webkit-scrollbar {
@@ -133,7 +167,8 @@
 
     .why_choose_us_container h2 {
         font-size: 2.5rem;
-        line-height: 2.65rem;
+        line-height: 2.75rem;
+        letter-spacing: -1px;
         max-width: 70%;
         padding-top: 2rem;
     }
@@ -144,10 +179,20 @@
 
     .why_choose_us_container .details_overview {
         padding-right: 20rem;
+        padding-left: 6rem;
+        max-width: 96%;
     }
 
     .why_choose_us_container .details_overview .box p {
         max-width: 100%;
+    }
+
+    .why_choose_us_container .nav_buttons {
+        padding: 0 3rem 0 4rem;
+    }
+
+    .why_choose_us_container .nav_buttons button.left_nav_btn {
+        margin-left: 0;
     }
 }
 
