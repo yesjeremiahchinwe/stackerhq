@@ -1,0 +1,180 @@
+.why_choose_us_container {
+    margin: 3rem auto;
+    width: 100%;
+    padding: 0 1.15rem;
+}
+
+.why_choose_us_container h2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.why_choose_us_container p {
+    color: var(--gray);
+    padding-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.why_choose_us_container .details_overview {
+    margin: 3.5rem auto;
+    padding: 0 8rem 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 96%;
+    overflow-x: scroll;
+}
+
+.why_choose_us_container .details_overview::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.why_choose_us_container .details_overview .box {
+    min-width: 480px;
+    min-height: 570px;
+    background-color: rgba(243, 243, 243, 0.7);
+    border-radius: 21px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why_choose_us_container .details_overview .box h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.why_choose_us_container .details_overview .box h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.85rem 0;
+}
+
+.why_choose_us_container .details_overview .box p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray);
+    font-size: 14px;
+    padding-top: 0;
+}
+
+.why_choose_us_container .details_overview .box p:last-of-type {
+    padding: 1rem 0;
+}
+
+.why_choose_us_container .details_overview .images {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.why_choose_us_container .details_overview .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.why_choose_us_container .details_overview .box.interface .images {
+    padding: 1rem 0;
+}
+
+.why_choose_us_container .scroll_indicator {
+    width: 100%;
+    max-width: 96%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: rgba(243, 243, 243, 0.9);
+}
+
+.why_choose_us_container .scroll_indicator .inner_scroll_indicator {
+    width: 100%;
+    max-width: 33%;
+    height: 3px;
+    background-color: var(--dark);
+}
+
+.why_choose_us_container .active_indicator {
+    width: 100%;
+    max-width: 96%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.why_choose_us_container .active_indicator small {
+    font-family: 600;
+    color: var(--dark);
+}
+
+@media screen and (min-width: 1000px) {
+    .why_choose_us_container {
+        padding: 0;
+    }
+
+    .why_choose_us_container .scroll_indicator {
+        max-width: 90%;
+    }
+
+    .why_choose_us_container .heading {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .why_choose_us_container h2 {
+        font-size: 2.5rem;
+        line-height: 2.65rem;
+        max-width: 70%;
+        padding-top: 2rem;
+    }
+
+    .why_choose_us_container p {
+        max-width: 70%;
+    }
+
+    .why_choose_us_container .details_overview {
+        padding-right: 20rem;
+    }
+
+    .why_choose_us_container .details_overview .box p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .why_choose_us_container {
+        margin: 6rem auto;
+    }
+
+    .why_choose_us_container .scroll_indicator {
+        max-width: 84%;
+    }
+
+    .why_choose_us_container .heading {
+        max-width: 82%;
+    }
+
+    .why_choose_us_container h2 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .why_choose_us_container p {
+        max-width: 40%;
+    }
+
+    .why_choose_us_container .active_indicator {
+        max-width: 84%;
+    }
+
+}
