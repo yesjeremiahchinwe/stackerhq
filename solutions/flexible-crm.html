@@ -613,13 +613,14 @@
       </div>
 
       <div class="nav_buttons">
-        <button class="left_nav_btn">
+        <button class="left_nav_btn" id="left">
           <img
             src="/assets/images/svgs/chevron_right_white.svg"
             alt="Chevron"
           />
         </button>
-        <button class="right_nav_btn">
+        
+        <button class="right_nav_btn showRightArrow" id="right">
           <img
             src="/assets/images/svgs/chevron_right_white.svg"
             alt="Chevron"
@@ -712,7 +713,7 @@
 
       <div class="active_indicator">
         <div>
-          <small>1</small>
+          <small class="current_indicator">1</small>
           <small>of</small>
           <small>3</small>
         </div>
@@ -1015,5 +1016,6 @@
 
     <script src="../js/index.js"></script>
     <script src="../js/faq.js"></script>
+    <script src="../js/scroll_carousel.js"></script>
   </body>
 </html>
