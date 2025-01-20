@@ -879,7 +879,8 @@ header .signInButton a {
 
 @media screen and (min-width: 1000px) {
   header {
-    padding: 0 1.25rem 1rem 1.35rem;
+    padding-bottom: 1rem;
+    width: 90%;
   }
 
   .hero_container {

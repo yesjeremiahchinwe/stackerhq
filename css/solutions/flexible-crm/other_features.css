@@ -47,6 +47,13 @@
     height: 100px;
     background-color: rgba(243, 243, 243, 0.7);
     border-radius: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other_features_container .feature_box .feature_img_box img {
+    width: 36px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -89,7 +96,7 @@
     }
 
     .other_features_container .feature_box .feature_img_box {
-        min-width: 130px;
-        height: 140px;
+        min-width: 120px;
+        height: 120px;
     }
 }

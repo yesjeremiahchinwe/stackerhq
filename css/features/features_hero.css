@@ -90,6 +90,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+@media screen and (min-width: 1000px) {
+    .features_hero_container {
+        max-width: 90%;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .features_hero_container {
         max-width: 82%;
