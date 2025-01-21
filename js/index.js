@@ -40,10 +40,10 @@ function changeSlide(index) {
   currentSlide = index;
 }
 
-// setInterval(() => {
-//   let nextSlide = (currentSlide + 1) % slides.length;
-//   changeSlide(nextSlide);
-// }, 5000); // Change slide every 5 seconds
+setInterval(() => {
+  let nextSlide = (currentSlide + 1) % slides.length;
+  changeSlide(nextSlide);
+}, 5000); // Change slide every 5 seconds
 
 changeSlide(currentSlide);
 

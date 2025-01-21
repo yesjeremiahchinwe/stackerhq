@@ -14,10 +14,10 @@
 
 ## To the run the project locally
 
--Run
+- Run
 
 ```js
-    git clone https://github.com/yesjeremiahchinwe/stackerhq.git
+git clone https://github.com/yesjeremiahchinwe/stackerhq.git
 ```
 
 ```js
