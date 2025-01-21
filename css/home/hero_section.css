@@ -45,6 +45,7 @@ header .signInButton {
   justify-content: flex-end;
   flex: 1 1 15%;
   z-index: 10;
+  margin-left: auto;
 }
 
 header .signInButton a {
@@ -60,6 +61,7 @@ header .signInButton a {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .menuButton {
