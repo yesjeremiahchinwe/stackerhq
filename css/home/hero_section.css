@@ -14,7 +14,7 @@ header {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  padding: 1.15rem 1.25rem 1rem 1.35rem;
+  padding: 0 1.25rem 1rem 1.35rem;
   z-index: 400;
 }
 

@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Demo | Software that's as unique as your business</title>
-    <meta name="description" content="Stacker is the software system that makes it easy to build custom CRMs, internal tools, customer portals and other business applications for your team. In minutes, not months. No coding required." />
-</head>
-<body>
-    <h1>Book Demo Page</h1>
-</body>
+    <meta
+      name="description"
+      content="Stacker is the software system that makes it easy to build custom CRMs, internal tools, customer portals and other business applications for your team. In minutes, not months. No coding required."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/book-demo/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="book_demo_header">
+      <div>
+        <img src="/assets/images/svgs/stacker.svg" alt="Stacker Logo" />
+      </div>
+    </header>
+
+    <main>
+      <section class="demo_hero_container">
+        <img src="/assets/images/a_lady_and_a_man.webp" alt="" />
+        <div class="img_overlay">
+          <div class="overlay_content">
+            <div>
+              <h1>
+                Get a custom demo to see how Stacker would work for your
+                organization
+              </h1>
+
+              <h4>What can you expect on the call?</h4>
+
+              <p>
+                <span>→</span> We&apos;ll learn more about your business and your use-case
+              </p>
+              <p><span>→</span> We&apos;ll walk you through the Stacker platform</p>
+              <p>
+                <span>→</span> We'll answer any questions and discuss pricing based on your
+                unique needs and use-case
+              </p>
+            </div>
+
+            <div class="calender_wrapper">
+              <div class="logo_wrapper">
+                <i class="bi bi-bounding-box"></i>
+              </div>
+
+              <h6>Stacker Team</h6>
+              <h5>Stacker Product Demo</h5>
+
+              <div class="timing">
+                <span><i class="bi bi-clock"></i> 30 min</span>
+                <p>We'll show you how to turn your team's processes into high-impact business apps.</p>
+              </div>
+
+              <small>Select a Day</small>
+              <div id="calendar"></div>
+
+              <div class="time_zone">
+                <h6>Time zone</h6>
+                <div>
+                  <i class="bi bi-globe-americas"></i>
+                  <span>Pacific Time - US & Canada (14:25)</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <img src="/assets/images/svgs/stacker.svg" alt="Stacker Logo" />
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Destructure the Calendar constructor
+        const { Calendar } = window.VanillaCalendarPro;
+        // Create a calendar instance and initialize it.
+        const calendar = new Calendar('#calendar');
+        calendar.init();
+      });
+    </script>
+  </body>
 </html>
